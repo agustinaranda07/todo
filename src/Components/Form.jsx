@@ -6,20 +6,32 @@ import Resultados from './Resultados'
 const Formulario = styled.form`
     display:flex;
     max-width:900px;
-    margin:15px auto;
+    margin:25px auto;
     gap:1rem;
     justify-content:center;
 `
 const Texto = styled.input`
     font-family:"Lato",sans-serif;
+    width:50%;
+    font-size:15px;
+    border:1px solid indigo;
+    border-radius:5px;
+    padding:5px;
+
+    &&:active{
+        border:1px solid indigo;
+    }
 `
 
 const Boton = styled.button`
     border:none;
     font-family:"Lato",sans-serif;
-    padding:10px;
-    background-color: #6ef06e;
+    padding:15px;
+    background-color: indigo;
     border-radius:3px;
+    color:#FFF;
+    font-weight:700;
+    font-size:17px;
 
     &:hover{
         cursor: pointer;
